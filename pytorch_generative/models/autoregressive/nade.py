@@ -121,7 +121,7 @@ def reproduce(
     train_loader, test_loader = debug_loader, debug_loader
     if train_loader is None:
         train_loader, test_loader = datasets.get_mnist_loaders(
-            batch_size, dynamically_binarize=True
+            batch_size, dynamically_binarize=True, num_workers=2,
         )
 
     model = models.NADE(input_dim=784, hidden_dim=500)

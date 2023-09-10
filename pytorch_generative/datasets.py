@@ -26,7 +26,7 @@ def _resize_to_32(x):
 
 
 def get_mnist_loaders(
-    batch_size, dynamically_binarize=False, dequantize=False, resize_to_32=False
+    batch_size, dynamically_binarize=False, dequantize=False, resize_to_32=False, num_workers=2
 ):
     """Creates train and test loaders for the MNIST dataset.
 
@@ -54,12 +54,12 @@ def get_mnist_loaders(
         datasets.MNIST("/tmp/data", train=True, download=True, transform=transform),
         batch_size=batch_size,
         shuffle=True,
-        num_workers=os.cpu_count(),
+        num_workers=num_workers,
     )
     test_loader = data.DataLoader(
         datasets.MNIST("/tmp/data", train=False, download=True, transform=transform),
         batch_size=batch_size,
-        num_workers=os.cpu_count(),
+        num_workers=num_workers,
     )
     return train_loader, test_loader
 
