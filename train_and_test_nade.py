@@ -1,12 +1,12 @@
 import torch
-import pytorch_generative as pg
+import pytorch_generative as pgw
 from pytorch_generative.models.autoregressive.nade import NADE, reproduce
 
 # Set parameters
 epochs = 30
 hidden_dim = 300
 batch_size = 128  # or any other size you want
-logdir = "/tmp/run"  # or any other directory for TensorBoard logs
+logdir = "/home/hice1/ppai33/scratch/run"  # or any other directory for TensorBoard logs
 n_gpus = 1  # or any other number of GPUs you want to use
 
 # Initialize NADE model

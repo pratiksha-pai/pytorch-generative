@@ -80,6 +80,9 @@ class Trainer:
             model = parallel.DistributedDataParallel(
                 model, device_ids=[self.device_id], output_device=self.device_id
             )
+        # else:
+        #     assert device_id is None, "'device_id' must be None if n_gpus <= 1."
+        #     model = parallel.DataParallel(model)
 
         # Trainer state saved during checkpointing.
         self.model = model
@@ -109,6 +112,7 @@ class Trainer:
         if self.lr_scheduler is not None:
             checkpoint["lr_scheduler"] = self.lr_scheduler.state_dict()
         # TODO(eugenhotaj): Add an option to keep only the last n checkpoints.
+        print(f"Saving trainer checkpoint {checkpoint['epoch']} state to {self.log_dir}.")
         torch.save(checkpoint, self._path(f"trainer_state_{self._epoch}.ckpt"))
 
     def _find_latest_epoch(self):
