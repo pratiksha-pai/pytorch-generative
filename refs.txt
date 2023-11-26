@@ -1,0 +1,11 @@
+https://courses.engr.illinois.edu/ece313/fa2012/homework/sol09.pdf
+https://stats.stackexchange.com/questions/530697/probability-distribution-of-the-distance-of-a-point-in-a-square-to-a-fixed-point
+https://math.stackexchange.com/questions/278410/finding-the-probability-density-function-of-y-ex-where-x-is-standard-norma
+https://math.mit.edu/~guionnet/midterm2asol.pdf
+https://math.stackexchange.com/questions/176196/calculate-the-expected-value-of-y-ex-where-x-sim-n-mu-sigma2
+https://stats.stackexchange.com/questions/530697/probability-distribution-of-the-distance-of-a-point-in-a-square-to-a-fixed-point
+https://arxiv.org/pdf/1905.10347.pdf
+https://github.com/ioangatop/machine_learning_2/blob/master/lab_3/12402559_12141666_lab3.ipynb
+https://mlbhanuyerra.github.io/2018-01-28-Handwritten-Digits_Mixture-of-Bernoulli-Distributions/
+https://github.com/VictorZuanazzi/MachineLearning102-1/blob/master/lab3.ipynb
+https://www.cs.cmu.edu/~bapoczos/Classes/ML10715_2015Fall/assignments/hw2_sol.pdf
