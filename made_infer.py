@@ -25,5 +25,5 @@ if isinstance(samples, torch.Tensor):
 
 samples = (samples * 255).astype(np.uint8)
 combined_image = np.hstack(samples)
-plt.imsave("made_combined_image.png", combined_image, cmap='gray')
+plt.imsave("made_combined_image_sani.png", combined_image, cmap='gray')
 
